@@ -1,7 +1,7 @@
 # Debian Samba Wallpaper Share
 
 ## Setup Server
-Add new shareable folder on host.
+Install samba:
 ```zsh
 sudo apt install samba smbclient
 ```
@@ -27,6 +27,10 @@ smbclient -L //localhost -N
 ```
 
 ## Setup client
+Install sambaclient:
+```zsh
+sudo apt install smbclient
+```
 Check the availability of the share (change ip):
 ```zsh
 smbclient //ip/Wallpapers -N
